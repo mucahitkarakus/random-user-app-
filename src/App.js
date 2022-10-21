@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import axios from "axios";
 import mailSvg from "./assets/mail.svg";
 import manSvg from "./assets/man.svg";
 import womanSvg from "./assets/woman.svg";
@@ -14,11 +15,22 @@ const url = "https://randomuser.me/api/";
 const defaultImage = "https://randomuser.me/api/portraits/men/75.jpg";
 
 function App() {
+
+
+  
+
+
+
+
+
+
+
   return (
     <main>
       <div className="block bcg-orange">
         <img src={cwSvg} alt="cw" id="cw" />
       </div>
+      {/* */}
       <div className="block">
         <div className="container">
           <img src={defaultImage} alt="random user" className="user-img" />
