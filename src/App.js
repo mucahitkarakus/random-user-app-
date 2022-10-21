@@ -31,7 +31,7 @@ function App() {
 
   // Get info Section
    const getInfo = (hover) => {
-
+      console.log(hover)
    }
 
 
@@ -53,22 +53,22 @@ function App() {
               <p className="user-title">{userData.name.first}</p>
               <p className="user-value"></p>
               <div className="values-list">
-                <button className="icon" data-label="name">
+                <button  className="icon" data-label="name" onMouseEnter={() => getInfo("profile")}   >
                   <img src={womanSvg} alt="user" id="iconImg" />
                 </button>
-                <button className="icon" data-label="email">
+                <button className="icon" data-label="email" onMouseEnter={() => getInfo("email")}>
                   <img src={mailSvg} alt="mail" id="iconImg" />
                 </button>
-                <button className="icon" data-label="age">
+                <button className="icon" data-label="age" onMouseEnter={() => getInfo("age")} >
                   <img src={womanAgeSvg} alt="age" id="iconImg" />
                 </button>
-                <button className="icon" data-label="street">
+                <button className="icon" data-label="street" onMouseEnter={() => getInfo("location")}>
                   <img src={mapSvg} alt="map" id="iconImg" />
                 </button>
-                <button className="icon" data-label="phone">
+                <button className="icon" data-label="phone" onMouseEnter={() => getInfo("phone")}>
                   <img src={phoneSvg} alt="phone" id="iconImg" />
                 </button>
-                <button className="icon" data-label="password">
+                <button className="icon" data-label="password" onMouseEnter={() => getInfo("password")}>
                   <img src={padlockSvg} alt="lock" id="iconImg" />
                 </button>
               </div>
