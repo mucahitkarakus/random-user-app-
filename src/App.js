@@ -15,8 +15,18 @@ const url = "https://randomuser.me/api/";
 const defaultImage = "https://randomuser.me/api/portraits/men/75.jpg";
 
 function App() {
+  const [userData , setUserData] = useState(null);
 
+  const getRandomUser = async () => {
+    await axios
+    .get(url)
+    .then((res) => console.log(res.data.results[0]))
+    .catch((err) => console.log(err))
+  }; 
 
+  useEffect(() => {
+    getRandomUser();
+    })
   
 
 
