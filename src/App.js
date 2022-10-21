@@ -24,6 +24,10 @@ function App() {
       .then((res) => {
         console.log(res.data.results[0]);
         setUserData(res.data.results[0]);
+        setUserInfo({
+          title: "My name is",
+          info:`${res.data.results[0].name.first} ${res.data.results[0].name.last}`
+        })
       })
       .catch((err) => console.log(err));
   };
