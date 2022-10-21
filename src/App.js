@@ -14,7 +14,7 @@ const defaultImage = "https://randomuser.me/api/portraits/men/75.jpg";
 
 function App() {
   const [userData, setUserData] = useState(null);
-
+  const [info, setInfo] = useState("")
   const getRandomUser = async () => {
     await axios
       .get(url)
@@ -29,6 +29,14 @@ function App() {
     getRandomUser();
   }, []);
 
+  // Get info Section
+   const getInfo = (hover) => {
+
+   }
+
+
+
+  // Get info Section Done
 
 
   return (
